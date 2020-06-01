@@ -1,0 +1,52 @@
+.btn-blue {
+    background-color: $hover-color;
+    color: $white-color;
+    border-radius: 0;
+    font-size: $font-size-md;
+    transition: all 0.8s ease-in-out;
+}
+
+.btn-blue:hover,
+.btn-blue:focus {
+    background-color: $white-color;
+    color: $hover-color;
+	border: 1px solid $hover-color;
+    border-radius: 25px;
+    font-size: $font-size-md;
+}
+
+.btn-outline-blue {
+    background-color: transparent;
+    color: $outline-hover;
+    border: 1px solid $outline-hover;
+	border-radius: 0;
+    font-size: $font-size-md;
+    transition: all 0.8s ease-in-out;
+}
+
+.btn-outline-blue:hover,
+.btn-outline-blue:focus {
+    background-color: $outline-hover;
+    color: $white-color;
+	border: 1px solid $outline-hover;
+	border-radius: 25px;
+    font-size: $font-size-md;
+}
+
+.btn-outline-white {
+    background-color: transparent;
+    color: $white-color;
+    border: 1px solid $white-color;
+    border-radius: 0;
+    font-size: $font-size-md;
+    transition: all 0.8s ease-in-out;
+}
+
+.btn-outline-white:hover,
+.btn-outline-white:focus {
+    background-color: $outline-hover;
+    color: $white-color;
+    border: 1px solid $outline-hover;
+    border-radius: 25px;
+    font-size: $font-size-md;
+}

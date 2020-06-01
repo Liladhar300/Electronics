@@ -1,0 +1,49 @@
+
+@mixin flex{
+  display: -webkit-box; 
+  display: -moz-box; 
+  display: -ms-flexbox; 
+  display: -webkit-flex;
+  display: flex; 
+}
+
+@mixin transform-scale{
+  transform: scale(1.1);
+  -ms-transform: scale(1.1); 
+  -moz-transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+@mixin transform-skew{
+  transform: skew(-9deg);
+  -ms-transform: skew(-9deg); 
+  -moz-transform: skew(-9deg); 
+  -webkit-transform: skew(-9deg);
+  -o-transform: skew(-9deg);
+}
+
+$xs-phone : '(max-width: 320px)';
+$sm-phone: '(max-width: 767px)';
+$md-phone: '(max-width: 991px)';
+$md-up-phone: '(min-width: 992px)';
+$landscape-ipad: '(min-width: 992px) and (max-width: 1199px)';
+$lg-desktop: '(min-width: 1200px)';
+
+@mixin respond-to($media) {
+    @media only screen and #{$media} {
+        @content;
+    }
+}
+
+@mixin rotate-transform{
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -moz-transition: -webkit-transform 0.4s ease-out;
+  -ms-transition: -webkit-transform 0.4s ease-out;
+  transition: -webkit-transform 0.4s ease-out;
+  transition: transform 0.4s ease-out;
+  -webkit-transform: rotateZ(360deg);
+  -moz-transform: rotateZ(360deg);
+  -ms-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}

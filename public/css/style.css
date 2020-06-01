@@ -1,0 +1,187 @@
+html {
+    position: relative;
+}
+body {
+    font-family: "Nunito Sans", sans-serif;
+    background-color: #fff;
+    margin-bottom: 60px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+a:focus,
+a:active,
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+select::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: 0;
+    outline: none !important;
+    text-decoration: none !important;
+}
+textarea:focus,
+input:focus,
+textarea:active,
+input:active,
+select:focus,
+select:active {
+    outline: none !important;
+}
+
+.btn.active.focus,
+.btn.active:focus,button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+/*pre loader*/
+.pre-loader {
+    width: 100%;
+    height: 100%;
+    background: url('../img/preloader.gif') center no-repeat #FFF;
+    z-index: 99999;
+    position: fixed;
+}
+
+/* Media query  for IE-11  */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .card-header, .card{
+        display: block;
+    }
+
+    .display-table{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .check-h{
+        min-height: 100%;
+    }
+
+    .overlay-img,.overlay-img1{
+        width: 100%;
+    }
+
+    input:-ms-input-placeholder {
+        color: #b3b3b3 !important;
+        font-size: 14px;
+        font-family: "Nunito Sans", sans-serif;
+    }
+}
+
+/* Media query  IE9 and IE10 rule sets go here  */
+@media screen and (min-width:0\0) {
+    
+    .navbar-toggleable-md .navbar-collapse{
+        flex: 1 1 auto !important;
+    }
+
+    .navbar-toggleable-sm .navbar-collapse{
+        flex: 1 1 auto !important;
+    }
+
+    .media-body{
+        display: inline-block;
+    }  
+}
+
+
+.relative{
+    position: relative;
+}
+
+::-moz-placeholder {
+    color: #b3b3b3 !important;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+::-webkit-input-placeholder {
+    color: #b3b3b3 !important;
+    font-size: 14px;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+
+p {
+    color: #888;
+    font-size: 15px;
+}
+
+.text-faded{
+    color: #eee !important;
+}
+
+.text-middle{
+    display:table; 
+    height:100%; 
+    width: 100%;
+}
+
+.v-middle{
+    display:table-cell; 
+    vertical-align:middle;
+}
+
+
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.custom-table thead th{
+    border-top: 0px !important;
+    border-bottom: 0px !important;
+}
+.custom-table td,.custom-table th{
+    vertical-align: middle !important;
+    outline: 0 !important;
+    border-right: 0;
+}
+
+
+.table-hover tbody tr:hover,.custom-table thead tr:first-child{
+    background: #f7f7f7 !important;
+}
+
+@media(min-width: 992px){
+    .custom-table td{
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 100px;
+    }
+}
+
+.text-truncate{
+    width: 200px !important;
+    display: inline-block;
+}
+
+.custom-12{
+    font-size: 12px;
+}
+
+.custom-40{
+    font-size: 40px !important;
+} 
